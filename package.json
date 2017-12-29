@@ -1,0 +1,55 @@
+{
+  "name": "jest-demo",
+  "version": "1.0.0",
+  "description": "Demo for jest testing",
+  "main": "index.js",
+  "scripts": {
+    "build": "run-s clean compile",
+    "compile": "tsc",
+    "clean": "rimraf ./dist",
+    "test": "jest",
+    "watch:test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrfunkycold/jest-demo.git"
+  },
+  "keywords": [
+    "jest",
+    "typescript",
+    "test",
+    "babel"
+  ],
+  "author": "josemedina921@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrfunkycold/jest-demo/issues"
+  },
+  "homepage": "https://github.com/mrfunkycold/jest-demo#readme",
+  "dependencies": {
+    "@types/jest": "^22.0.0",
+    "jest": "^22.0.4",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^22.0.0",
+    "typescript": "^2.6.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true
+  }
+}
